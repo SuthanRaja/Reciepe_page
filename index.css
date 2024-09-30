@@ -1,0 +1,165 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(30, 54%, 90%);
+    margin: 50px;
+    padding: 0px;
+    height: 100;
+}
+
+
+.outer-card{
+   height: auto;
+   width: 600px;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   
+   background-color: #fff;
+
+}
+
+.outer-card .inner-card{
+    margin: 20px;
+}
+
+.outer-card .inner-card .food-image{
+        width: 90%;
+        height: auto ;
+        
+        border-radius: 10px;
+}
+
+.outer-outer-card .inner-card h2{
+    font-weight: 400;
+    
+    color: rgb(24, 23, 23);
+    text-align: left;
+    
+    
+}
+
+h2,h3{
+    font-family: "Young Serif", system-ui;
+    font-style: normal;
+}
+
+p,li{
+ 
+    font-weight: 400;
+    
+    font-size: 0.85rem;
+    color: rgb(136, 131, 131);
+}
+
+p, .preparation-time,h4,li,ul,ol,td{
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    
+}
+
+h4{
+    color: hsl(332, 51%, 32%);
+    
+}
+
+.preparation-time{
+    margin: 40px;
+}
+
+ul{
+    list-style-type: disc;
+    margin: 0;
+    
+  
+}
+
+li strong{
+    color: #4A2E30;
+    font-weight: bold;
+}
+
+li{
+    margin-bottom: 8px;
+    color: #555;
+    padding-left: 20px;
+
+}
+
+h3{
+    color:hsl(14, 45%, 36%);
+}
+
+td{
+    padding: 15px;
+    padding-right: 200px;
+}
+
+.white-font{
+   
+   color: rgb(136, 131, 131);
+}
+
+.brown-font{
+    color:hsl(14, 45%, 36%);
+}
+
+
+
+/*mobile view*/
+
+@media screen and (max-width:480px) {
+   
+   body{
+        margin: 0%;
+        padding: 0%;
+        display: block;
+   }
+
+   .outer-card, .outer-card .inner-card{
+    margin: 0%;
+    padding: 0%;
+   }
+
+   .outer-card .inner-card .food-image{
+    width: 100%;
+   }
+
+   .outer-card .inner-card h2{
+    text-align: left;
+    font-size: 3.5rem;
+    margin: 7%;
+   }
+
+    .outer-card .inner-card p{
+        font-size: 1.65rem;
+        margin: 7%;
+    }
+
+    .outer-card .inner-card .preparation-time{
+        margin: 10.5%;
+        font-size: 1.65rem;
+
+    }
+
+    ul,li{
+        font-size: 1.65rem;
+        margin: 8%;
+    }
+
+    .outer-card .inner-card h3{
+        text-align: left;
+        margin: 7%;
+        font-size: 3rem;
+    }
+
+    td{
+        font-size: 1.65rem;
+        padding-right: 50px;
+        margin-left: 5%;
+        padding-left: 100px;
+    }
+
+   
+}
